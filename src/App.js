@@ -22,7 +22,6 @@ import MarketTabPanel from "./components/market-tab-panel";
 import DepthChart from "./components/depth-chart";
 import YourPortfolio from "./components/your-portfolio";
 import "react-perfect-scrollbar/dist/css/styles.css";
-import PerfectScrollbar from "react-perfect-scrollbar";
 import Footer from "./components/footer.js";
 import "./css/style.css";
 
@@ -47,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     background: "#030304",
   },
   toolbar: {
-    paddingRight: 24, // keep right padding when drawer closed
+    paddingRight: 24,
   },
   toolbarIcon: {
     display: "flex",
@@ -179,10 +178,9 @@ export default function Dashboard() {
 
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
-        //{" "}
         <Container maxWidth="xl" className={classes.container}>
           <Grid container spacing={2}>
-            {/* wallet */}
+            {/* USD Perpetual Swap */}
 
             <Grid item xs={12} md={6}>
               <Paper className={fixedHeightPaper1}>
@@ -221,6 +219,9 @@ export default function Dashboard() {
                 </div>
               </Paper>
             </Grid>
+
+            {/* your wallet */}
+
             <Grid item xs={12} md={6}>
               <Paper className={fixedHeightPaper1}>
                 <div className={classes.card}>
@@ -260,45 +261,59 @@ export default function Dashboard() {
                 <OrderTabPanel />
               </Paper>
             </Grid>
+
+            {/* chart */}
+
             <Grid item xs={12} md={6} lg={5}>
               <Paper className={clsx(classes.paper, classes.fixedHeight2)}>
                 <Chart />
               </Paper>
             </Grid>
-            {/* Recent Deposits */}
+
+            {/* order book */}
+
             <Grid item xs={12} md={6} lg={2}>
               <Paper className={classes.paper}>
                 <OrderBook />
               </Paper>
             </Grid>
+
+            {/* trade history */}
+
             <Grid item xs={12} md={6} lg={2}>
               <Paper className={classes.paper}>
                 <TradeHistory />
               </Paper>
             </Grid>
 
-            {/* Recent Orders */}
+            {/* market panel */}
 
             <Grid item xs={12} md={6} lg={3}>
               <Paper className={classes.paper}>
                 <MarketTabPanel />
               </Paper>
             </Grid>
+
+            {/* portfolio */}
+
             <Grid item xs={12} md={6} lg={2}>
               <Paper className={classes.paper}>
                 <YourPortfolio />
               </Paper>
             </Grid>
+
+            {/* depth chart */}
+
             <Grid item xs={12} md={12} lg={7}>
               <Paper className={classes.paper}>
                 <DepthChart />
               </Paper>
             </Grid>
-            {/* Recent Deposits */}
           </Grid>
-          <Box pt={4}>
-            <Copyright />
-          </Box>
+
+          {/* footer */}
+
+          <Box pt={4}></Box>
           <Footer />
         </Container>
       </main>

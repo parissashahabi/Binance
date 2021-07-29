@@ -5,6 +5,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import { makeStyles } from "@material-ui/core/styles";
 import "../css/style.css";
+
 const useStyles = makeStyles((theme) => ({
   footer: {
     borderTop: "1px solid #363c4e",
