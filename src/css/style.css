@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Barlow:400,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+span,
+tr {
+  color: #898990;
+}
+
+p {
+  color: #898990;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: medium;
+}
+h6 {
+  color: #f4f4f4;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #898990 !important;
+}
+.form-control:hover {
+  box-shadow: none !important;
+  outline: none;
+  border-color: #363c4e;
+  color: #a1a0a7;
+  background: #000;
+}
+.form-control:focus,
+.form-control:active,
+.form-control.active {
+  box-shadow: none !important;
+  outline: none;
+  border-color: #5d78ff;
+  color: #a1a0a7;
+  background: #000;
+}
+.table {
+  margin-bottom: 0px;
+  font-weight: 400;
+  width: 100%;
+}
+.table tr td,
+.table tr th {
+  border: 0px;
+  vertical-align: middle;
+  padding: 1rem 0.25rem 0rem 0.25rem;
+}
+.table tr td:last-child,
+.table tr th:last-child {
+  text-align: right;
+}
+
+.table tr th {
+  padding: 0px 5px;
+  color: #fff;
+  font-weight: 500;
+}
+.table-borderless th,
+.table-borderless td,
+.table-borderless thead th,
+.table-borderless tbody + tbody {
+  border: 0;
+}
+.price-pair {
+  position: relative;
+  height: 400px;
+  margin-bottom: 10px;
+}
+.container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
